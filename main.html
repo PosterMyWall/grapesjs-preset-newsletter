@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GrapesJS Newsletter Editor</title>
+  <link href="./grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
+  <link href="./dist/grapesjs-preset-newsletter.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+<script src="./grapesjs/dist/grapes.min.js"></script>
+<script src="./dist/grapesjs-preset-newsletter.min.js"></script>
+
+    <div id="gjs" style="height:0px; overflow:hidden">
+    </div>
+
+
+    <script type="text/javascript">
+      var editor = grapesjs.init({
+          container : '#gjs',
+          plugins: ['gjs-preset-newsletter'],
+          pluginsOpts: {
+            'gjs-preset-newsletter': {
+              modalTitleImport: 'Import template',
+              // ... other options
+            }
+          }
+      });
+    </script>
+  </body>
+</html>
